@@ -6,7 +6,7 @@
 
 gum style --foreground="#f5c2e7" "Welcome to Keg! What would you like to do?"
 
-TASK=$(cat tasks.txt | gum choose --limit 1)
+TASK=$(echo "Install a package with Brew\nUpdate Brew\nUpdate a Brew Package(s)\nUninstall a Brew Package(s)" | gum choose --limit 1)
 
 case "$TASK" in
   "Install a package with Brew") 

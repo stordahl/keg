@@ -1,4 +1,0 @@
-Install a package with Brew
-Update Brew
-Update a Brew Package(s)
-Uninstall a Brew Package(s)
