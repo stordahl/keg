@@ -15,7 +15,7 @@ case "$TASK" in
     echo "$P is installed!"
   ;;
   "Update Brew") 
-    gum spin --spinner dot --title "Updating brew " -- brew update
+    gum spin --spinner dot --title "Updating brew (this may take a while)" -- brew update
     echo "Brew is updated!"
   ;;
   "Update a Brew Package(s)")
@@ -28,7 +28,8 @@ case "$TASK" in
     done
   ;;
   "Uninstall a Brew Package(s)")
-    brew list | echo "Space to select, Enter to uninstall" && gum choose --no-limit | xargs brew uninstall
+    echo "Space to select, Enter to uninstall"
+    brew list | gum choose --no-limit | xargs brew uninstall
   ;;
   *) gum style "No selection made"
   ;;
