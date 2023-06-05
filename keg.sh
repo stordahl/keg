@@ -19,7 +19,7 @@ TASK=$(echo "Install a Package\nUpdate Brew\nUpdate a Brew Package(s)\nUninstall
 
 case "$TASK" in
     "Install a Package")
-    NAME=$()
+    NAME=$(gum input --placeholder "Package Name")
     gum spin --spinner dot --title "Installing $NAME" -- brew install $NAME
     echo "$NAME was installed!"
     ;;
