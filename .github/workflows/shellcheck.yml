@@ -3,7 +3,7 @@ on:
     branches:
       - main
 
-name: "Trigger: Push action"
+name: "ShellCheck"
 permissions: {}
 
 jobs:
