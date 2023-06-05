@@ -3,6 +3,15 @@
 # Keg - easily manage Homebrew  #
 # Copyright Jacob Stordahl 2023 #
 #################################
+#
+# Edited by Kyle LeBlanc - 2023
+#
+#################################
+
+if ! which -s gum > /dev/null 2>&1 || ! which -s brew > /dev/null 2>&1; then
+    echo "Requirement not found! Please install Gum and Homebrew."
+    exit 1
+fi
 
 gum style --foreground="#f5c2e7" "Welcome to Keg! What would you like to do?"
 
