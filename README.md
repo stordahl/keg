@@ -20,7 +20,7 @@ Use keg to...
 First git clone this repo to your machine...
 
 ```shell
-git clone https://github.com/stordahl/keg.git
+git clone https://github.com/leblanck/keg.git
 
 # or using the Github CLI
 # gh repo clone stordahl/keg
