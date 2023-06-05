@@ -20,7 +20,7 @@ TASK=$(echo "Install a Package\nUpdate Brew\nUpdate a Brew Package(s)\nUninstall
 case "$TASK" in
     "Install a Package")
     NAME=$(gum input --placeholder "Package Name")
-    gum spin --spinner dot --title "Installing $NAME" -- brew install $NAME
+    gum spin --spinner dot --title "Installing $NAME" -- brew install "$NAME"
     echo "$NAME was installed!"
     ;;
 
@@ -35,7 +35,7 @@ case "$TASK" in
     UPDATE=$(brew list | gum choose --no-limit)
     for app in $UPDATE
     do
-        gum spin --spinner dot --title "Updating $app" -- brew update $app
+        gum spin --spinner dot --title "Updating $app" -- brew update "$app"
         echo "Updated $app"
     done
     ;;
@@ -46,7 +46,7 @@ case "$TASK" in
     gum style --foreground="#539FC5" "You have selected to Uninstall $TITLE."
 
     if gum confirm; then
-        gum spin --spinner dot --title "Uninstalling $TITLE" -- brew uninstall $TITLE
+        gum spin --spinner dot --title "Uninstalling $TITLE" -- brew uninstall "$TITLE"
     else
         echo "Uninstall Cancelled"
     fi
