@@ -27,5 +27,5 @@ git clone https://github.com/stordahl/keg.git
 Then simply alias the script in your .zshrc, .bash_profile, etc
 
 ```shell
-alias keg="zsh ./path/to/script/keg.sh"
+alias keg="zsh /path/to/script/keg.sh"
 ```
