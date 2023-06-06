@@ -23,7 +23,7 @@ First git clone this repo to your machine...
 git clone https://github.com/leblanck/keg.git
 
 # or using the Github CLI
-# gh repo clone stordahl/keg
+# gh repo clone leblanck/keg
 ```
 
 Then simply alias the script in your .zshrc, .bash_profile, etc
