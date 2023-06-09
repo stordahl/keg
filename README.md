@@ -1,6 +1,6 @@
 # Keg 🍻
 
-![Build Status](https://github.com/leblanck/keg/actions/workflows/shellcheck.yml/badge.svg)
+![Build Status](https://github.com/stordahl/keg/actions/workflows/shellcheck.yml/badge.svg)
 
 A tiny cli to simplify managing Homebrew.
 
@@ -20,10 +20,10 @@ Use keg to...
 First git clone this repo to your machine...
 
 ```shell
-git clone https://github.com/leblanck/keg.git
+git clone https://github.com/stordahl/keg.git
 
 # or using the Github CLI
-# gh repo clone leblanck/keg
+# gh repo clone stordahl/keg
 ```
 
 Then simply alias the script in your .zshrc, .bash_profile, etc

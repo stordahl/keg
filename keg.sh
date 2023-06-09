@@ -1,6 +1,6 @@
 #!/bin/sh
 #################################
-# KeG - easily manage Homebrew  #
+# Keg - easily manage Homebrew  #
 # Copyright Jacob Stordahl 2023 #
 #################################
 #
@@ -13,7 +13,7 @@ if ! which -s gum > /dev/null 2>&1 || ! which -s brew > /dev/null 2>&1; then
     exit 1
 fi
 
-gum style --foreground="#539FC5" "Welcome to KeG! What would you like to do?"
+gum style --foreground="#539FC5" "Welcome to Keg! What would you like to do?"
 
 TASK=$(echo "Install a Package\nUpdate Brew\nUpdate a Brew Package(s)\nUninstall Package" | gum choose --limit 1)
 
