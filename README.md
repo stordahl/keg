@@ -1,6 +1,6 @@
 # Keg 🍻
 
-![Build Status](https://github.com/stordahl/keg/actions/workflows/shellcheck.yml/badge.svg)
+![Build Status](https://github.com/leblanck/keg/actions/workflows/shellcheck.yml/badge.svg)
 
 A tiny cli to simplify managing Homebrew.
 
