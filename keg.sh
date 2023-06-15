@@ -15,7 +15,7 @@ fi
 
 gum style --foreground="#539FC5" "Welcome to Keg! What would you like to do?"
 
-TASK=$(echo "Install a Package\nUpdate Brew\nUpdate a Brew Package(s)\nUninstall Package" | gum choose --limit 1)
+TASK=$(echo "Install a Package\nUpdate Brew\nUpdate a Brew Package(s)\nUninstall Package\nExit" | gum choose --limit 1)
 
 case "$TASK" in
     "Install a Package")
@@ -50,6 +50,11 @@ case "$TASK" in
     else
         echo "Uninstall Cancelled"
     fi
+    ;;
+
+    "Exit")
+    gum style --foreground="#539FC5" "Goodbye!"
+    exit 0
     ;;
 
     *) gum style "No selection made"
