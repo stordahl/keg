@@ -1,5 +1,7 @@
 # Keg 🍻
 
+![Build Status](https://github.com/leblanck/keg/actions/workflows/shellcheck.yml/badge.svg)
+
 A tiny cli to simplify managing Homebrew.
 
 https://user-images.githubusercontent.com/60861572/235326739-92648404-0c23-478e-9489-2c7fc515a014.mp4
@@ -27,5 +29,5 @@ git clone https://github.com/stordahl/keg.git
 Then simply alias the script in your .zshrc, .bash_profile, etc
 
 ```shell
-alias keg="zsh ./path/to/script/keg.sh"
+alias keg="zsh /path/to/script/keg.sh"
 ```
